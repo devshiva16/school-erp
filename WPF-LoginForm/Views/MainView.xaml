@@ -16,6 +16,17 @@
     <Window.DataContext>
         <viewModel:MainViewModel/>
     </Window.DataContext>
+    <Window.Resources>
+
+        <DataTemplate DataType="{x:Type viewModel:HomeViewModel}">
+            <local:HomeView/>
+        </DataTemplate>
+        
+        <DataTemplate DataType="{x:Type viewModel:StudentViewModel}">
+            <local:StudentView/>
+        </DataTemplate>
+
+    </Window.Resources>
     <!--<Grid>
         <TextBlock Text="{Binding CurrentUserAccount.DisplayName}"
                    FontSize="30"

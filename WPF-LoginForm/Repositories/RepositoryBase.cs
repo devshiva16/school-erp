@@ -12,7 +12,7 @@ namespace WPF_LoginForm.Repositories
         private readonly string _connectionString;
         public RepositoryBase()
         {
-            _connectionString = "Server=(local); Database=MVVMLoginDb; Integrated Security=true";
+            _connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Login-In-WPF-MVVM-C-Sharp-and-SQL-Server-main\\WPF-LoginForm\\App_Data\\ERPdb.mdf;Integrated Security=True";// "Server=(local); Database=MVVMLoginDb; Integrated Security=true";
         }
         protected SqlConnection GetConnection()
         {
